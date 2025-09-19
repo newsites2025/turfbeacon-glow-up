@@ -41,22 +41,13 @@ const Hero = () => {
             Expert Lawn Care, Hardscaping, and Sustainable Solutions
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className="flex justify-center mb-12">
             <Button
               size="lg"
               onClick={scrollToContact}
               className="btn-hero text-lg px-8 py-6 h-auto"
             >
               Request a Free Estimate
-            </Button>
-            
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={scrollToServices}
-              className="text-lg px-8 py-6 h-auto border-white/30 text-white hover:bg-white/10 hover:border-white/50"
-            >
-              View Our Services
             </Button>
           </div>
           
