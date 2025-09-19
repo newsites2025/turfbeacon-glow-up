@@ -171,12 +171,11 @@ All colors MUST be HSL.
 
   /* Card Hover Effects */
   .service-card {
-    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-2;
-    box-shadow: var(--shadow-soft);
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-2 shadow-md;
   }
 
   .service-card:hover {
-    box-shadow: var(--shadow-strong);
+    @apply shadow-2xl;
   }
 
   /* Gradient Text */
