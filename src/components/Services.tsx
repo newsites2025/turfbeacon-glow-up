@@ -21,7 +21,7 @@ const Services = () => {
         "Weed & pest control",
         "Seasonal cleanup"
       ],
-      gradient: "from-green-50 to-emerald-50"
+      gradient: "from-accent/10 to-primary/5"
     },
     {
       icon: Hammer,
@@ -34,7 +34,7 @@ const Services = () => {
         "Fire pits & outdoor kitchens",
         "Water features"
       ],
-      gradient: "from-stone-50 to-gray-50"
+      gradient: "from-muted to-secondary"
     },
     {
       icon: Leaf,
@@ -47,7 +47,7 @@ const Services = () => {
         "Pollinator gardens",
         "Sustainable design"
       ],
-      gradient: "from-emerald-50 to-green-50"
+      gradient: "from-primary/10 to-accent/5"
     }
   ];
 
