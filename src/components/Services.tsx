@@ -58,83 +58,24 @@ const Services = () => {
     }
   };
 
+  console.log('Services component is rendering');
+
   return (
-    <section id="services" className="section-padding">
+    <section id="services" className="py-20 bg-red-500">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-primary">
-              Our Services
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
+              Our Services - TEST
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              From comprehensive lawn care to stunning hardscaping and eco-friendly solutions, 
-              we offer everything you need to create and maintain your perfect outdoor space.
+            <p className="text-lg text-white max-w-3xl mx-auto">
+              This is a test to see if the Services section is visible at all.
             </p>
           </div>
-
-          {/* Services Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-            {services.map((service, index) => (
-              <Card key={index} className="service-card border-border/50 overflow-hidden">
-                <CardHeader className={`bg-gradient-to-br ${service.gradient} p-6`}>
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                    <service.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <CardTitle className="text-xl text-primary">
-                    {service.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="p-6">
-                  <p className="text-muted-foreground mb-6">
-                    {service.description}
-                  </p>
-                  <ul className="space-y-3 mb-6">
-                    {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start space-x-3">
-                        <CheckCircle className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
-                        <span className="text-sm text-foreground">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button 
-                    variant="outline" 
-                    className="w-full group"
-                    onClick={scrollToContact}
-                  >
-                    Learn More
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          {/* CTA Section */}
-          <div className="bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 rounded-2xl p-8 md:p-12 text-center">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-primary">
-              Ready to Transform Your Outdoor Space?
-            </h3>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Get a free, no-obligation estimate for your landscaping project. 
-              Our experts will work with you to create the perfect outdoor oasis.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg"
-                onClick={scrollToContact}
-                className="bg-accent text-accent-foreground hover:bg-accent-light"
-              >
-                Get Free Estimate
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                onClick={() => window.open("tel:336-938-3774")}
-              >
-                Call (336) 938-3774
-              </Button>
-            </div>
+          
+          <div className="bg-blue-500 p-8 text-white text-center">
+            <h3 className="text-2xl font-bold mb-4">Test Content</h3>
+            <p>If you can see this blue box, the Services section is rendering.</p>
           </div>
         </div>
       </div>
